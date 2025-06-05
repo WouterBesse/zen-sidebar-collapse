@@ -11,6 +11,33 @@
     --zen-toolbox-max-width: calc(var(--tab-min-width) + var(--tab-block-margin) + var(--zen-toolbox-padding) * 2) !important;
     --zen-toolbox-min-width: 1px !important;
     --zen-sidebar-width: var(--zen-toolbox-max-width) !important;
+
+    .zen-workspace-tabs-section {
+        :root[zen-sidebar-expanded='true'] & {
+            min-width: 100% !important; /* Set width based on padding */
+        }
+            
+    }
+      
+    #tabbrowser-tabs[orient="vertical"] {
+        &[expanded] {
+            & .tabbrowser-tab {
+                padding: 0 var(--zen-toolbox-padding) 0 0 !important;
+            }
+        }
+    }
+    
+    toolbox:not([zen-has-hover]) .zen-essentials-container {
+        overflow:visible;
+    }
+    toolbox:not([zen-has-hover]) .zen-essentials-container {
+        overflow:visible;
+        width: inherit !important;
+    } 
+      
+    toolbox:not([zen-has-hover]) .zen-essentials-container .tab-icon-image {
+        margin-inline-start: 0px !important;
+    } 
     
     @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.hide_workspace_indicator") {
         #zen-current-workspace-indicator-container {
