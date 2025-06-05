@@ -1,4 +1,6 @@
-# Sidebar Expand on Hover
+# Sidebar Expand on Hover - Wouters Version
+
+Tweaked to fix some interface issues, such as tab icon backgrounds being cut off. Also added other easing that I like better
 
 ## Description
 
